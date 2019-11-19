@@ -38,9 +38,6 @@ collections:
   videos:
     output: true
     
-    
-# Search for SASS files inside assets/css.
-sass: { sass_dir: 'assets/css' }
   
 
 # Exclude from processing.
