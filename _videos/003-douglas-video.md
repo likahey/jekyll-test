@@ -1,7 +1,8 @@
 ---
 order: 3
-title: Douglas' pc video
-youtube_url: https://www.youtube.com/watch?v=A-bLSGP1gwU
+title: My Second Video
+videoId: xWGZdvX0jXM
+layout: video
 ---
 
-Here is a great video of Douglas!
+Here is my second ever video!
