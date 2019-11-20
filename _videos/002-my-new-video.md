@@ -1,5 +1,7 @@
 ---
-title: "Here is my latest video"
+order: 2
+title: My New Video
+youtube_url: https://www.youtube.com/watch?v=A-bLSGP1gwU
 ---
 
-Let's have fun
+Here is another great video!
