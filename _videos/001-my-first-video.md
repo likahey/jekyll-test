@@ -1,7 +1,8 @@
 ---
 order: 1
 title: My First Video
-youtube_url: https://www.youtube.com/watch?v=A-bLSGP1gwU
+videoId: A-bLSGP1gwU
+layout: video
 ---
 
 Here is my first ever video!
