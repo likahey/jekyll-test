@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <style type="text/css">
+      body {
+        margin: 0;
+        font-family: 'Lato';
+        font-size: 1.25rem;
+      }
+      
+      h1, h4 {
+        text-align: center;
+      }
+      
+      h4 {
+        color: #24678d;
+      }
+      
+      nav {
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        margin: 0;
+        box-shadow: 0px 8px 20px 0px black;
+        background-color: #11283C;
+        padding: 0 200px;
+      }
+      
+      nav a:hover {
+        background-color: #354859;
+      }
+      
+      nav a {
+        width: 12.5%;
+        text-align: center;
+        color: white;
+        text-decoration: none;
+        padding: 10px 0;
+        font-size: 1.25rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.1s linear;
+      }
+      
+      #header {
+        display: flex;
+        height: 100vh;
+        flex-direction: column;
+      }
+      
+      #hero {
+        height: 100%;
+        width: 100%;
+        background-image: linear-gradient(
+          rgba(0, 0, 0, 0.55),
+          rgba(0, 0, 0, 0.55)),
+          url('image_1_orig.png');
+        background-size: cover;
+        background-position: top;
+        background-attachment: fixed;
+        position: relative;
+      }
+      
+      #logo {
+        position: absolute;
+        right: 0;
+        width: 400px;
+      }
+      
+      #title {
+        color: white;
+        position: absolute;
+        right: 0;
+        margin: 0 20px;
+        font-size: 5em;
+      }
+      
+      #hero-center {
+        color: white;
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+      }
+      
+      #hero-center h3 {
+        margin-bottom: 10px;
+        font-weight: 100;
+        font-size: 3rem;
+      }
+      
+      #subtitle {
+        color: white;
+        position: absolute;
+        margin: 10px 20px;
+        bottom: 0;
+        font-size: 3em;
+      }
+      
+      #content {
+        width: 60%;
+        margin: auto;
+      }
+      
+      #footer {
+        text-align: center;
+        background-color: #f2f2f2;
+        color: #737373;
+        padding: 20px;
+      }
+      
+      /* Utility Classes */
+      .text-center {
+        text-align: center;
+      }
+      
+      .container {
+        display: flex;
+        width: 70%;
+        margin: auto;
+        align-items: center;
+      }
+      
+      .container .col {
+        margin: 20px;
+      }
+      
+      .btn {
+        text-decoration: none;
+        color: white;
+        background-color: black;
+        padding: 20px;
+        border-radius: 10px;
+        display: table;
+      }
+      
+      .btn.center {
+        margin: auto;
+      }
+      
+      .btn.red {
+        color: white;
+        background-color: red;
+      }
+      
+      /* Series & Video cards */
+      .series-playlist {
+        text-align: center;
+        padding-bottom: 20px;
+      }
+      
+      .series-videos {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 80%;
+        margin: auto;
+      }
+      
+      .video-card {
+        border: 2px solid green;
+        flex-grow: 1;
+        margin: 20px;
+        width: 50%;
+        text-align: left;
+      }
+      
+      .video-body {
+        padding: 10px;
+      }
+      
+      .video-thumb {
+        width: 100%;
+      }
+      
+      .video-title {
+        font-weight: 1000;
+      }
+      
+      .video-date {
+        color: darkgray;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header">
+      <div id="hero">
+        <img id="logo" src="logo-white.png">
+        <div id="hero-center">
+          <h3>Welcome to the Colin Furze Internet Shed!</h3>
+          <a class="btn red center" href="https://www.youtube.com/user/colinfurze/" target="_blank">Watch On Youtube</a>
+        </div>
+        <h2 id="subtitle">Turning the internet upto 11 since 2006!</h2>
+      </div>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">About Me</a>
+        <a href="#">Epic Projects</a>
+        <a href="#">Book</a>
+        <a href="#">Shop</a>
+        <a href="#">Thanks to</a>
+        <a href="#">Contact</a>
+        <a href="#">Walkers Snack Hiding Hacks</a>
+      </nav>
+    </div>
+    <div id="content">
+      <h1>Welcome to the Colin Furze Internet Shed!</h1>
+      <div class="text-center">
+        <p>Hi I'm Colin Furze, a British shed inventor and video maker. My aim is to make cool and crazy contraptions and share them with the world to perhaps inspire YOU to get on and make something.</p>
+        <p>To find out about my inventions and other contraptions visit the Projects page, here you will find photos, information and the videos.</p>
+        <p>If you're new to all things Furze then just have a browse and enjoy.</p>
+      </div>
+      <h1>Colin Furze Merch</h1>
+      <div class="container">
+        <div class="col">
+          <p>Furze Merchandise is available from my online shop. I have carried out rigorous shed wear testing on them and have my brew at least 5 times a day in my mug!</p>
+          <p>You also have the chance to get your hands on a signed copy of my book: <i>This Book Isn't Safe!</i>
+          <br>
+          I have signed a limited number of books which make great Christmas presents, to inspire kids to get making and creating.</p>
+          <a href="https://www.colinfurzeshop.com/" target="_blank">Click here to shop!</a>
+        </div>
+        <div class="col">
+          <img src="screen-shot-2019-11-15-at-11-58-58_orig.png" height="500px">
+        </div>
+      </div>
+      <h1>Latest Video Series</h1>
+      <div class="series-playlist">
+        <h4 class="series-description">I've made the StarWars Landspeeder, check out this AWESOME build and show video below!</h2>
+        <div class="series-videos">
+          <div class="video-card">
+            <div class="video-header">
+              <img class="video-thumb" src="https://i.ytimg.com/vi/X2h_yHnTwVw/maxresdefault.jpg">
+            </div>
+            <div class="video-body">
+              <div class="video-title">Fabricating a Metal Landspeeder that DRIVES</div>
+              <div class="video-date">28 Nov 2019</div>
+              <div class="video-description">
+                Together myself and eBay Uk are building our 3rd Star Wars creation, we've made a huge AT-ACT Playhouse, a FULL SIZE Tie Silencer and now to celebrate the release of Star Wars: The Rise of Skywalker - Luke Skywalker’s Landspeeder from the first film, A New Hope.
+              </div>
+            </div>
+          </div>
+          <div class="video-card">
+            <div class="video-header">
+              <a href="#">
+                <img class="video-thumb" src="https://i.ytimg.com/vi/hngDG7yx7sE/maxresdefault.jpg">
+              </a>
+            </div>
+            <div class="video-body">
+              <div class="video-title">JET POWERED STAR WARS LANDSPEEDER</div>
+              <div class="video-date">8 Dec 2019</div>
+              <div class="video-description">
+                It's Finished and it looks a beauty so we had to chuck a few Jet engines in for good measure.
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn center">View Series Page</a>
+      </div>
+    </div>
+    <div id="footer">
+      &copy; 2019 Colin Furze
+    </div>
+  </body>
+</html>

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <style type="text/css">
+      body {
+        margin: 0;
+        font-family: 'Lato';
+        font-size: 1.25rem;
+      }
+      
+      h1, h4 {
+        text-align: center;
+      }
+      
+      h4 {
+        color: #24678d;
+      }
+      
+      nav {
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        margin: 0;
+        box-shadow: 0px 8px 20px 0px black;
+        background-color: #11283C;
+        padding: 0 200px;
+        position: fixed;
+        right: 0;
+        top: 0;
+        left: 0;
+      }
+      
+      nav a:hover {
+        background-color: #354859;
+      }
+      
+      nav a {
+        width: 12.5%;
+        text-align: center;
+        color: white;
+        text-decoration: none;
+        padding: 10px 0;
+        font-size: 1.25rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.1s linear;
+      }
+      
+      #header {
+        display: flex;
+        height: 100vh;
+        flex-direction: column;
+      }
+      
+      #hero {
+        height: 100%;
+        width: 100%;
+        background-image: linear-gradient(
+          rgba(0, 0, 0, 0.55),
+          rgba(0, 0, 0, 0.55)),
+          url('image_1_orig.png');
+        background-size: cover;
+        background-position: top;
+        background-attachment: fixed;
+        position: relative;
+      }
+      
+      #logo {
+        position: absolute;
+        right: 0;
+        width: 400px;
+      }
+      
+      #title {
+        color: white;
+        position: absolute;
+        right: 0;
+        margin: 0 20px;
+        font-size: 5em;
+      }
+      
+      #hero-center {
+        color: white;
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+      }
+      
+      #hero-center h3 {
+        margin-bottom: 10px;
+        font-weight: 100;
+        font-size: 3rem;
+      }
+      
+      #subtitle {
+        color: white;
+        position: absolute;
+        margin: 10px 20px;
+        bottom: 0;
+        font-size: 3em;
+      }
+      
+      #content {
+        width: 60%;
+        margin: auto;
+        margin-top: 120px;
+      }
+      
+      #footer {
+        text-align: center;
+        background-color: #f2f2f2;
+        color: #737373;
+        padding: 20px;
+      }
+      
+      /* Utility Classes */
+      .text-center {
+        text-align: center;
+      }
+      
+      .container {
+        display: flex;
+        width: 70%;
+        margin: auto;
+        align-items: center;
+      }
+      
+      .container .col {
+        margin: 20px;
+      }
+      
+      .btn {
+        text-decoration: none;
+        color: white;
+        background-color: black;
+        padding: 20px;
+        border-radius: 10px;
+        display: table;
+      }
+      
+      .btn.center {
+        margin: auto;
+      }
+      
+      .btn.red {
+        color: white;
+        background-color: red;
+      }
+      
+      /* Series & Video cards */
+      .series-playlist {
+        text-align: center;
+        padding-bottom: 20px;
+      }
+      
+      .series-videos {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 80%;
+        margin: auto;
+      }
+      
+      .video-card {
+        border: 2px solid green;
+        flex-grow: 1;
+        margin: 20px;
+        width: 50%;
+        text-align: left;
+      }
+      
+      .video-body {
+        padding: 10px;
+      }
+      
+      .video-thumb {
+        width: 100%;
+      }
+      
+      .video-title {
+        font-weight: 1000;
+      }
+      
+      .video-date {
+        color: darkgray;
+      }
+      
+      .video-container {
+        position: relative;
+        padding-bottom: 56.25%;
+        padding-top: 30px; height: 0; overflow: hidden;
+      }
+
+      .video-container iframe,
+      .video-container object,
+      .video-container embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <img src="logo-white.png" height="100px">
+      <a href="#">Home</a>
+      <a href="#">About Me</a>
+      <a href="#">Epic Projects</a>
+      <a href="#">Book</a>
+      <a href="#">Shop</a>
+      <a href="#">Thanks to</a>
+      <a href="#">Contact</a>
+      <a href="#">Walkers Snack Hiding Hacks</a>
+    </nav>
+    <div id="content">
+      <h1>StarWars Landspeeder</h1>
+      <h4>Metal bodywork and real Jet Engines make this a pretty epic build.</h4>
+      <img width="100%" src="https://i.ytimg.com/vi/hngDG7yx7sE/maxresdefault.jpg">
+      <p>I purchased items off eBay to make the Landspeeder including the Golf Buggy that initially formed the chassis and a to scale toy to use as a reference for dimensions and art details.<br><br>
+      The body shape was first developed using Ply and foam to get all the sections sized up and then it was formed out of metal. I used an English wheel and a bead roller to create the curve in the metal, a whole new skill for me. It has remained electric powered with some extra oomph from the two Diesel Jet engines attached to each side.</p>
+      <div class="image-gallery">
+        <img width="30%" src="videos/_GameAndFilmGadgets/Landspeeder/images/img-20190925-121630_orig.jpg">
+        <img width="30%" src="videos/_GameAndFilmGadgets/Landspeeder/images/img-20191021-131100_orig.jpg">
+        <img width="30%" src="videos/_GameAndFilmGadgets/Landspeeder/images/img-20191112-143149_orig.jpg">
+        <img width="30%" src="videos/_GameAndFilmGadgets/Landspeeder/images/img-20191115-151217_orig.jpg">
+        <img width="30%" src="videos/_GameAndFilmGadgets/Landspeeder/images/img-20191115-153030_orig.jpg">
+        <img width="30%" src="videos/_GameAndFilmGadgets/Landspeeder/images/img-20191123-102501_orig.jpg">
+      </div>
+      <h1>Videos in this Series</h1>
+      <div class="series-playlist">
+        <h4 class="series-description">I've made the StarWars Landspeeder, check out this AWESOME build and show video below!</h2>
+        <div class="series-videos">
+          <div class="video-card">
+            <div class="video-header">
+              <img class="video-thumb" src="https://i.ytimg.com/vi/X2h_yHnTwVw/maxresdefault.jpg">
+            </div>
+            <div class="video-body">
+              <div class="video-title">Fabricating a Metal Landspeeder that DRIVES</div>
+              <div class="video-date">28 Nov 2019</div>
+              <div class="video-description">
+                Together myself and eBay Uk are building our 3rd Star Wars creation, we've made a huge AT-ACT Playhouse, a FULL SIZE Tie Silencer and now to celebrate the release of Star Wars: The Rise of Skywalker - Luke Skywalker’s Landspeeder from the first film, A New Hope.
+              </div>
+            </div>
+          </div>
+          <div class="video-card">
+            <div class="video-header">
+              <a href="#">
+                <img class="video-thumb" src="https://i.ytimg.com/vi/hngDG7yx7sE/maxresdefault.jpg">
+              </a>
+            </div>
+            <div class="video-body">
+              <div class="video-title">JET POWERED STAR WARS LANDSPEEDER</div>
+              <div class="video-date">8 Dec 2019</div>
+              <div class="video-description">
+                It's Finished and it looks a beauty so we had to chuck a few Jet engines in for good measure.
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn center">View Series Page</a>
+      </div>
+    </div>
+    <div id="footer">
+      &copy; 2019 Colin Furze
+    </div>
+  </body>
+</html>
