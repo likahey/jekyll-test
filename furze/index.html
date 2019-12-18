@@ -54,7 +54,6 @@
       <div id="hero">
         <div id="slideshow">
           <img src="image_1_orig.png" class="fadeIn">
-          <img src="image_12_orig.png">
           <img src="image_13_orig.png">
           <img src="image_19_orig.png">
           <img src="image_10_orig.png">
@@ -70,26 +69,37 @@
         </div>
         <h2 id="subtitle">Turning the internet upto 11 since 2006!</h2>
       </div>
-      <nav>
-        <img src="logo-white.png" height="100px">
-        <a href="#">Home</a>
-        <a href="#">About Me</a>
-        <a href="#">Epic Projects</a>
-        <a href="#">Book</a>
-        <a href="#">Shop</a>
-        <a href="#">Thanks to</a>
-        <a href="#">Contact</a>
-        <a href="#">Walkers Snack Hiding Hacks</a>
+      <nav class="mobileMenu">
+        <img src="logo-white.png">
+        <div class="links">
+          <a href="#">Home</a>
+          <a href="#">About Me</a>
+          <a href="#">Epic Projects</a>
+          <a href="#">Book</a>
+          <a href="#">Shop</a>
+          <a href="#">Thanks to</a>
+          <a href="#">Contact</a>
+          <a href="#">Walkers Snack Hiding Hacks</a>
+        </div>
+        <button class="navbar-toggler hamburger" type="button" onclick="mobileNavToggle()">
+          <span class="icon-bar top-bar"></span>
+          <span class="icon-bar middle-bar"></span>
+          <span class="icon-bar bottom-bar"></span>				
+        </button>
       </nav>
     </div>
     <div id="page">
       <div id="content">
         <h1>Welcome to the Colin Furze Internet Shed!</h1>
-        <div class="text-center">
-          <p>Hi I'm Colin Furze, a British shed inventor and video maker. My aim is to make cool and crazy contraptions and share them with the world to perhaps inspire YOU to get on and make something.</p>
+        <hr>
+        <div class="text-center main-body">
+          <img class="main-body" src="image_12_orig.png">
+          <p>Hi, I'm Colin Furze, a British shed inventor and video maker. My aim is to make cool and crazy contraptions and share them with the world to perhaps inspire YOU to get on and make something.</p>
           <p>To find out about my inventions and other contraptions visit the Projects page, here you will find photos, information and the videos.</p>
           <p>If you're new to all things Furze then just have a browse and enjoy.</p>
+          <a href="#" class="btn center">Browse Videos</a>
         </div>
+        <hr>
         <h1>Colin Furze Merch</h1>
         <div class="container">
           <div class="col">
@@ -97,19 +107,22 @@
             <p>You also have the chance to get your hands on a signed copy of my book: <i>This Book Isn't Safe!</i>
             <br>
             I have signed a limited number of books which make great Christmas presents, to inspire kids to get making and creating.</p>
-            <a href="https://www.colinfurzeshop.com/" target="_blank">Click here to shop!</a>
+            <a href="https://www.colinfurzeshop.com/" class="btn center" target="_blank">Click here to shop!</a>
           </div>
           <div class="col">
             <img src="screen-shot-2019-11-15-at-11-58-58_orig.png" height="500px">
           </div>
         </div>
+        <hr>
         <h1>Latest Video Series</h1>
         <div class="series-playlist">
           <h4 class="series-description">I've made the StarWars Landspeeder, check out this AWESOME build and show video below!</h2>
           <div class="series-videos">
             <div class="video-card">
               <div class="video-header">
-                <img class="video-thumb" src="https://i.ytimg.com/vi/X2h_yHnTwVw/maxresdefault.jpg">
+                <a href="video.html">
+                  <img class="video-thumb" src="https://i.ytimg.com/vi/X2h_yHnTwVw/maxresdefault.jpg">
+                </a>
               </div>
               <div class="video-body">
                 <div class="video-title">Fabricating a Metal Landspeeder that DRIVES</div>
@@ -118,10 +131,13 @@
                   Together myself and eBay Uk are building our 3rd Star Wars creation, we've made a huge AT-ACT Playhouse, a FULL SIZE Tie Silencer and now to celebrate the release of Star Wars: The Rise of Skywalker - Luke Skywalker’s Landspeeder from the first film, A New Hope.
                 </div>
               </div>
+              <div class="video-buttons">
+                <a href="video.html" class="btn blue center">Watch Video</a>
+              </div>
             </div>
             <div class="video-card">
               <div class="video-header">
-                <a href="#">
+                <a href="video2.html">
                   <img class="video-thumb" src="https://i.ytimg.com/vi/hngDG7yx7sE/maxresdefault.jpg">
                 </a>
               </div>
@@ -132,9 +148,12 @@
                   It's Finished and it looks a beauty so we had to chuck a few Jet engines in for good measure.
                 </div>
               </div>
+              <div class="video-buttons">
+                <a href="video2.html" class="btn blue center">Watch Video</a>
+              </div>
             </div>
           </div>
-          <a href="#" class="btn center">View Series Page</a>
+          <a href="series.html" class="btn center">View Series Page</a>
         </div>
       </div>
     </div>
@@ -148,7 +167,6 @@
       // Sticky navbar
       var nav = document.getElementsByTagName('nav')[0];
       var navOffset = nav.offsetTop;
-      console.log(nav);
       
       window.onscroll = function() {
         if (window.pageYOffset >= navOffset) {
@@ -158,26 +176,31 @@
         }
       };
       
+      // Mobile nav  
+      function mobileNavToggle() {
+        console.log("click");
+        document.getElementsByClassName('mobileMenu')[0].classList.toggle('open');
+        document.getElementsByClassName('navbar-toggler')[0].classList.toggle('hamburger');
+        document.getElementsByClassName('mobileMenu')[0].classList.remove('hidden');
+      }
+      
       // Slideshow
       
       var timer = setInterval(nextSlide, 4000);
       var slide = 0;
       var slides = document.getElementById('slideshow').getElementsByTagName('img');
-      console.log(slides);
       var slideLength = slides.length;
-      console.log(slideLength);
       
       function nextSlide() {
         var e;
         slides[slide].classList.remove("fadeIn");
         slide++;
-        console.log(slide);
         if (slide > slideLength - 1) {
           slide = 0;
         }
-        console.log(slide);
         slides[slide].classList.add("fadeIn");
       }
+      
     </script>
   </body>
 </html>
