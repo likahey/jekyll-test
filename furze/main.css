@@ -282,6 +282,7 @@ img.main-body {
   display: none;
   cursor: pointer;
   z-index: 21;
+  margin-right: 20px;
 }
 
 .icon-bar {
@@ -290,14 +291,33 @@ img.main-body {
   background-color: white;
   display: block;
   margin-top: 4px;
+  transition: all 0.2s;
 }
 
 .navbar-toggler.hamburger .top-bar {
   transform: rotate(0);
 }
 
+.navbar-toggler.hamburger .middle-bar {
+  opacity: 1;
+}
+
+.navbar-toggler.hamburger .bottom-bar {
+  transform: rotate(0);
+}
+
 .navbar-toggler .top-bar {
   transform: rotate(45deg);
+  transform-origin: 10% 10%;
+}
+
+.navbar-toggler .middle-bar {
+  opacity: 0;
+}
+
+.navbar-toggler .bottom-bar {
+  transform: rotate(-45deg);
+  transform-origin: 10% 10%;
 }
 
 @media (max-width: 813px) {
@@ -316,15 +336,25 @@ img.main-body {
     justify-content: center;
     align-items: center;
     transform: translateX(100%);
-    transition: transform .5s ease-in-out;
+    transition: transform .4s ease-in-out;
   }
   
   nav.open .links {
     transform: translateX(0%);
   }
   
+  nav img {
+    z-index: 22;
+  }
+  
+  nav a {
+    width: 100%;
+    padding: 20px 0;
+  }
+  
   nav {
     justify-content: space-between;
+    padding: 0;
   }
 }
 
@@ -332,6 +362,10 @@ img.main-body {
 @media (max-width: 576px) {
   #content {
     width: 100%;
+  }
+  
+  .container {
+    flex-direction: column;
   }
   
   img.main-body {

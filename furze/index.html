@@ -178,8 +178,12 @@
       
       // Mobile nav  
       function mobileNavToggle() {
-        console.log("click");
         document.getElementsByClassName('mobileMenu')[0].classList.toggle('open');
+        if (document.getElementsByClassName('mobileMenu')[0].classList.contains('open')) {
+          document.body.style.overflow = 'hidden';
+        } else {
+          document.body.style.overflow = 'visible';
+        }
         document.getElementsByClassName('navbar-toggler')[0].classList.toggle('hamburger');
         document.getElementsByClassName('mobileMenu')[0].classList.remove('hidden');
       }
