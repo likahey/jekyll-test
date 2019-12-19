@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" rel="stylesheet">
     <link href="main.css" rel="stylesheet">
     <style type="text/css">      
       nav {
@@ -67,7 +67,7 @@
           <h3>Welcome to the Colin Furze Internet Shed!</h3>
           <a class="btn red center" href="https://www.youtube.com/user/colinfurze/" target="_blank">Watch On Youtube</a>
         </div>
-        <h2 id="subtitle">Turning the internet upto 11 since 2006!</h2>
+        <h2 id="subtitle" class="mobile-hide">Turning the internet upto 11 since 2006!</h2>
       </div>
       <nav class="mobileMenu">
         <img src="logo-white.png">
@@ -97,7 +97,7 @@
           <p>Hi, I'm Colin Furze, a British shed inventor and video maker. My aim is to make cool and crazy contraptions and share them with the world to perhaps inspire YOU to get on and make something.</p>
           <p>To find out about my inventions and other contraptions visit the Projects page, here you will find photos, information and the videos.</p>
           <p>If you're new to all things Furze then just have a browse and enjoy.</p>
-          <a href="#" class="btn center">Browse Videos</a>
+          <a href="series.html" class="btn center">Browse Videos</a>
         </div>
         <hr>
         <h1>Colin Furze Merch</h1>
@@ -132,7 +132,7 @@
                 </div>
               </div>
               <div class="video-buttons">
-                <a href="video.html" class="btn blue center">Watch Video</a>
+                <a href="video.html" class="btn blue center static">Watch Video</a>
               </div>
             </div>
             <div class="video-card">
@@ -149,7 +149,7 @@
                 </div>
               </div>
               <div class="video-buttons">
-                <a href="video2.html" class="btn blue center">Watch Video</a>
+                <a href="video2.html" class="btn blue center static">Watch Video</a>
               </div>
             </div>
           </div>
@@ -180,9 +180,9 @@
       function mobileNavToggle() {
         document.getElementsByClassName('mobileMenu')[0].classList.toggle('open');
         if (document.getElementsByClassName('mobileMenu')[0].classList.contains('open')) {
-          document.body.style.overflow = 'hidden';
+          //document.body.style.overflow = 'hidden';
         } else {
-          document.body.style.overflow = 'visible';
+          //document.body.style.overflow = 'visible';
         }
         document.getElementsByClassName('navbar-toggler')[0].classList.toggle('hamburger');
         document.getElementsByClassName('mobileMenu')[0].classList.remove('hidden');
