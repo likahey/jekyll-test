@@ -72,14 +72,7 @@ hr {
 
 #hero {
   height: 100%;
-  width: 100%;/*
-  background-image: linear-gradient(
-    rgba(0, 0, 0, 0.55),
-    rgba(0, 0, 0, 0.55)),
-    url('image_1_orig.png');
-  background-size: cover;
-  background-position: top;
-  background-attachment: fixed;*/
+  width: 100%;
   position: relative;
 }
 
@@ -128,7 +121,7 @@ hr {
 }
 
 #page {
-  background-color: white;
+  background-color: #d0e2f2;
 }
 
 #content {
@@ -222,6 +215,7 @@ hr {
   justify-content: space-between;
   box-shadow: 0px 5px 20px 0px black;
   transition: transform .2s ease-in-out;
+  background-color: white;
 }
 
 .video-card:hover {
@@ -300,11 +294,11 @@ img.main-body {
 }
 
 .icon-bar {
-  width: 22px;
-  height: 2px;
+  width: 33px;
+  height: 3px;
   background-color: white;
   display: block;
-  margin-top: 4px;
+  margin-top: 6px;
   transition: all 0.2s;
 }
 
@@ -334,7 +328,7 @@ img.main-body {
   transform-origin: 10% 10%;
 }
 
-@media (max-width: 813px) {
+@media (max-width: 885px) {
   .navbar-toggler {
     display: block;
   }
@@ -373,7 +367,7 @@ img.main-body {
 }
 
 
-@media (max-width: 576px) {
+@media (max-width: 778px) {
   #logo {
     width: 100%;
   }
@@ -400,5 +394,15 @@ img.main-body {
   
   .series-videos {
     flex-direction: column;
+  }
+}
+
+@media (max-width: 1600px) {
+  #content {
+    width: 100%;
+  }
+  
+  nav {
+    padding: 0 20px;
   }
 }
