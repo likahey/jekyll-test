@@ -372,6 +372,10 @@ img.main-body {
   #logo {
     position: static;
     display: block;
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
+    margin: 0 20px;
   }
   
   #slideshow {
@@ -382,11 +386,13 @@ img.main-body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 100%;
   }
   
   #hero-center {
     position: static;
     transform: none;
+    height: 100%;
   }
   
   #content {
