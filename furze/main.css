@@ -2,6 +2,7 @@ body {
   margin: 0;
   font-family: 'Titillium Web';
   font-size: 1.25rem;
+  background-color: #d0e2f2;
 }
 
 h1, h4 {
@@ -369,8 +370,25 @@ img.main-body {
 
 @media (max-width: 778px) {
   #logo {
-    width: 100%;
+    position: static;
+    display: block;
   }
+  
+  #slideshow {
+    
+  }
+  
+  #hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #hero-center {
+    position: static;
+    transform: none;
+  }
+  
   #content {
     width: 100%;
   }
