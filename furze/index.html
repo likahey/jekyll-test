@@ -62,15 +62,15 @@
         }
       }
       
-      #logo {
+      #logo.loaded {
         animation: 1s ease-out 0s 1 slideInFromRight;
       }
       
-      #hero-center {
+      #hero-center.loaded {
         animation: 2s ease-out 0s 1 slideUpFade;
       }
       
-      #subtitle {
+      #subtitle.loaded {
         animation: 1s ease-out 0s 1 slideInFromLeft;
       }
     </style>
@@ -242,6 +242,13 @@
         }
         slides[slide].classList.add("fadeIn");
       }
+      
+      document.addEventListener("DOMContentLoaded", function() {
+        // Start animations
+        document.getElementById("logo").classList.add("loaded");
+        document.getElementById("subtitle").classList.add("loaded");
+        document.getElementById("hero-center").classList.add("loaded");
+      });
       
     </script>
   </body>
