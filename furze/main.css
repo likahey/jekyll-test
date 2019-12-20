@@ -389,7 +389,7 @@ img.main-body {
   }
   
   nav img {
-    z-index: 22;
+    
   }
   
   nav a {
@@ -419,7 +419,7 @@ img.main-body {
   }
   
   #slideshow {
-    
+    position: absolute;
   }
   
   #hero {

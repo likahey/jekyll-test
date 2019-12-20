@@ -77,6 +77,19 @@
         }
       }
       
+      @media (max-width: 778px) {
+        @keyframes slideUpFade {
+          0% {
+            transform: translateY(-20px);
+            opacity: 0;
+          }
+          100% {
+            transform: translateY(0);
+            opacity: 1;
+          }
+        }
+      }
+      
       #logo {
         animation: 1s ease-out 0s 1 slideInFromRight;
       }
