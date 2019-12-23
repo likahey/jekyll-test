@@ -184,8 +184,10 @@ hr.w-40 {
 
 #footer #social-icons {
   display: flex;
+  margin: 0 20px;
   padding: 20px;
   justify-content: center;
+  box-shadow: inset 0 0 20px 0px black;
 }
 
 #footer #social-icons a {
@@ -207,8 +209,8 @@ hr.w-40 {
 
 #subnote {
   text-align: center;
-  background-color: #f2f2f2;
-  color: #737373;
+  
+  color: white;
   padding: 20px;
 }
 
@@ -516,6 +518,7 @@ img.main-body {
     max-width: 100%;
     width: auto;
     margin: 0 20px;
+    flex: 1;
   }
   
   #logo.loaded {
