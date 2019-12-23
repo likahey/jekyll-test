@@ -187,10 +187,15 @@ hr.w-40 {
   justify-content: center;
 }
 
+#footer #social-icons a {
+  margin: 0 20px;
+}
+
 #footer #social-icons svg {
   fill: white;
   margin: 10px;
-  max-height: 100px;
+  max-height: 80px;
+  max-width: 80px;
   transition: fill .2s linear, transform .3s ease-in-out;
 }
 
@@ -411,7 +416,7 @@ img.main-body {
     right: 0;
     justify-content: center;
     align-items: center;
-    transform: translateX(100%);
+    transform: translateY(-100%);
     transition: transform .4s ease-in-out;
   }
   
@@ -449,9 +454,11 @@ img.main-body {
 @keyframes slideInFromLeft {
   0% {
     transform: translateX(-100%);
+    opacity: 0;
   }
   100% {
     transform: translateX(0);
+    opacity: 1;
   }
 }
 
