@@ -8,6 +8,7 @@ body {
   font-family: 'Titillium Web';
   font-size: 1.25rem;
   background-color: #d0e2f2;
+  scroll-behavior: smooth;
 }
 
 h1, h4 {

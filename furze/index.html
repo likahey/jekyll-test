@@ -164,9 +164,15 @@
       function mobileNavToggle() {
         document.getElementsByClassName('mobileMenu')[0].classList.toggle('open');
         if (document.getElementsByClassName('mobileMenu')[0].classList.contains('open')) {
-          //document.body.style.overflow = 'hidden';
+          // mobile nav is open
+          document.documentElement.style.overflow = 'hidden';
+          
+          if (!nav.classList.contains("sticky") && window.scrollY != 0) {
+            // the nav has been opened in between bottom of page and sticky top
+            document.getElementById("page").scrollIntoView();
+          }
         } else {
-          //document.body.style.overflow = 'visible';
+          document.documentElement.style.overflow = 'visible';
         }
         document.getElementsByClassName('navbar-toggler')[0].classList.toggle('hamburger');
         document.getElementsByClassName('mobileMenu')[0].classList.remove('hidden');
