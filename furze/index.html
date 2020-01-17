@@ -18,6 +18,11 @@
         padding-top: 10px;
       }
       
+      html.lock, html.lock body {
+        height: 100%;
+        overflow: hidden;
+      }
+      
       
     </style>
   </head>
@@ -165,14 +170,14 @@
         document.getElementsByClassName('mobileMenu')[0].classList.toggle('open');
         if (document.getElementsByClassName('mobileMenu')[0].classList.contains('open')) {
           // mobile nav is open
-          document.documentElement.style.overflow = 'hidden';
+          document.documentElement.classList.add("lock");
           
           if (!nav.classList.contains("sticky") && window.scrollY != 0) {
             // the nav has been opened in between bottom of page and sticky top
             document.getElementById("page").scrollIntoView();
           }
         } else {
-          document.documentElement.style.overflow = 'visible';
+          document.documentElement.classList.remove("lock");
         }
         document.getElementsByClassName('navbar-toggler')[0].classList.toggle('hamburger');
         document.getElementsByClassName('mobileMenu')[0].classList.remove('hidden');
